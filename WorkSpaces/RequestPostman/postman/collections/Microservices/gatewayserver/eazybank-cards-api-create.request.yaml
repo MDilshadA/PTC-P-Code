@@ -1,0 +1,10 @@
+$kind: http-request
+name: eazybank/cards/api/create
+url: http://localhost:8072/eazybank/cards/api/create?mobileNumber=4354437687
+method: POST
+queryParams:
+  mobileNumber: "4354437687"
+body:
+  type: json
+  content: ""
+order: 6000

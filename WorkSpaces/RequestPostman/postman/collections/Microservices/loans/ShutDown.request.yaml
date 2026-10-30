@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:8090/actuator/shutdown
+method: POST
+order: 9000

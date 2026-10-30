@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:8071/encrypt
+method: POST
+body:
+  type: text
+  content: aishwarya@eazybank.com
+order: 1000

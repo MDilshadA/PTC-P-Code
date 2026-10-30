@@ -1,0 +1,5 @@
+$kind: http-request
+name: eazybank/accounts/api/build-info
+url: http://localhost:8072/eazybank/accounts/api/build-info
+method: GET
+order: 11000

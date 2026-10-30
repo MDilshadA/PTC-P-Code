@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:8080/actuator/refresh
+method: POST
+body:
+  type: json
+  content: ""
+order: 8000

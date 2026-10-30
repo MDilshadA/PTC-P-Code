@@ -1,0 +1,28 @@
+$kind: http-request
+url: http://localhost:8072/eazybank/accounts/api/create
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "name": "Madan Reddy",
+        "email": "tutor@eazybytes",
+        "mobileNumber": "4354437687"
+    }
+auth:
+  type: oauth2
+  credentials:
+    clientId: "{{ac-username}}"
+    accessTokenUrl: http://localhost:7080/realms/master/protocol/openid-connect/token
+    authUrl: http://localhost:7080/realms/master/protocol/openid-connect/auth
+    tokenName: authcode_accesstoken
+    tokenType: Bearer
+    addTokenTo: header
+    clientSecret: "{{ac-password}}"
+    scope: openid email profile
+    state: ew34er-344fgfg-5gfgfg
+    client_authentication: body
+    grant_type: authorization_code
+    accessToken: "{{supabase_service_role_api_key_0noa}}eyJleHAiOjE2OTIyNzA4MjYsImlhdCI6MTY5MjI3MDc2NiwiYXV0aF90aW1lIjoxNjkyMjcwNjg5LCJqdGkiOiJjYzA2ZDdlZS02MzE1LTQxOTgtYTE2ZS0zMzlmYmRhNjdmODUiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjcwODAvcmVhbG1zL21hc3RlciIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJmYTAxMjdhMi04ODdkLTQ0MzctYmNjZS00MDU2ZmVmMWEwNjgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJlYXp5YmFuay1jYWxsY2VudGVyLWNsaWVudDIiLCJzZXNzaW9uX3N0YXRlIjoiMWE3NmYwMDMtZTJmMC00OTM4LTkzZjMtYTFhZjZiMjM3ZGM5IiwiYWNyIjoiMCIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIkFDQ09VTlRTIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIGVtYWlsIHByb2ZpbGUiLCJzaWQiOiIxYTc2ZjAwMy1lMmYwLTQ5MzgtOTNmMy1hMWFmNmIyMzdkYzkiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6Ik1hZGFuIFJlZGR5IiwicHJlZmVycmVkX3VzZXJuYW1lIjoibWFkYW4iLCJnaXZlbl9uYW1lIjoiTWFkYW4iLCJmYW1pbHlfbmFtZSI6IlJlZGR5IiwiZW1haWwiOiJ0dXRvckBlYXp5Ynl0ZXMuY29tIn0.ojk3ZdM7vrbh_vs-RftN7l2515DaKq2ixJcab6d1Y5H00-DfzTiOI3PYOrPQOKx05Ksl9J7UdMVE8eEBVQ5jshwPIto2uNOIF0U_OBOQrnZz3cAlUl2BfsCT78WwuevbVFi-E9b3yYqOtlmjXkFMTKOLXmPjNsIWiOShEL0zYKKCa_bpHktFTGCweARDZ4r1QuMB7JfxcP-t-36Nm2q1chBagyatHtN--v02bK4jprwLVOkLoFomBmlRQ8bqxMRwyG85FOG0jan0JUFIcbnnX7ItAxKjPcNXQI6o9HZ1egrJbxo8uTp_M8K1vUcxYXcxgexVzQqAr-H9zgdmI8pcuw"
+    useBrowser: true
+order: 8000

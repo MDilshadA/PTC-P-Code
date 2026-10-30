@@ -1,0 +1,25 @@
+$kind: http-request
+url: http://localhost:8072/eazybank/cards/api/create?mobileNumber=4354437687
+method: POST
+queryParams:
+  mobileNumber: "4354437687"
+body:
+  type: json
+  content: ""
+auth:
+  type: oauth2
+  credentials:
+    clientId: "{{ac-username}}"
+    accessTokenUrl: http://localhost:7080/realms/master/protocol/openid-connect/token
+    authUrl: http://localhost:7080/realms/master/protocol/openid-connect/auth
+    tokenName: authcode_accesstoken
+    tokenType: Bearer
+    addTokenTo: header
+    clientSecret: "{{ac-password}}"
+    scope: openid email profile
+    state: ew34er-344fgfg-5gfgfg
+    client_authentication: body
+    grant_type: authorization_code
+    accessToken: "{{supabase_service_role_api_key_0noa}}eyJleHAiOjE2OTIyNzEyMjksImlhdCI6MTY5MjI3MTE2OSwiYXV0aF90aW1lIjoxNjkyMjcwNjg5LCJqdGkiOiIxYjVhN2ExYi02MmE5LTQ5Y2ItOWFjNy1jYTY1NjIxNWQwYzYiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjcwODAvcmVhbG1zL21hc3RlciIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJmYTAxMjdhMi04ODdkLTQ0MzctYmNjZS00MDU2ZmVmMWEwNjgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJlYXp5YmFuay1jYWxsY2VudGVyLWNsaWVudDIiLCJzZXNzaW9uX3N0YXRlIjoiMWE3NmYwMDMtZTJmMC00OTM4LTkzZjMtYTFhZjZiMjM3ZGM5IiwiYWNyIjoiMCIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJMT0FOUyIsImRlZmF1bHQtcm9sZXMtbWFzdGVyIiwiQUNDT1VOVFMiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiQ0FSRFMiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIiwic2lkIjoiMWE3NmYwMDMtZTJmMC00OTM4LTkzZjMtYTFhZjZiMjM3ZGM5IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJNYWRhbiBSZWRkeSIsInByZWZlcnJlZF91c2VybmFtZSI6Im1hZGFuIiwiZ2l2ZW5fbmFtZSI6Ik1hZGFuIiwiZmFtaWx5X25hbWUiOiJSZWRkeSIsImVtYWlsIjoidHV0b3JAZWF6eWJ5dGVzLmNvbSJ9.BSc8H2dgEtZJmIwvO-_r9JOHFXPKGZmZG3sM01nIH3jRlqIAToHGcUdlLcP_30z-zFAUceBhNcc08_Cd6y9Gg0ftdzrQj_nXe4MMuVVmk0l36D-sRrpSEcwjr-4qOw4o8Fxm7lQ7XoDk2i6KAUGhwQgqnnk46LIXvt5PxgJ9bxN3Ex2uzzDcvRc89SD7z5sfgCGpdCk3j-DMd04p_ZB0ftTyEChTQsJC87MKyNGNa4Q_Z0oLGFTVcvppGBXB5QJRUInIx2Y7XR1woUxHSAOO0CNShcGue63V0Z47fX_zvl3aVw9c8L1mQ229d98PwDh2EID9c9wAcewi2OE9YKxnEg"
+    useBrowser: true
+order: 9000

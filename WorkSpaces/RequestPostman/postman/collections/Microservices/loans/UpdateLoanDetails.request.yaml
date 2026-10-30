@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:8090/api/update
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "amountPaid": 10000,
+        "loanNumber": "100016924880",
+        "loanType": "Vehicle Loan",
+        "mobileNumber": "4354437687",
+        "outstandingAmount": 90000,
+        "totalLoan": 100000
+    }
+order: 3000

@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:8072/eazybank/accounts/api/contact-info
+method: GET
+order: 1000

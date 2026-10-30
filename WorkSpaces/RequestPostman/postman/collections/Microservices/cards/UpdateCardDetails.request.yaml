@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:9000/api/update
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "amountUsed": -10000,
+        "availableAmount": -90000,
+        "cardNumber": "10074237549112",
+        "cardType": "Debit Card",
+        "mobileNumber": "4354437687",
+        "totalLimit": -100000
+    }
+order: 3000

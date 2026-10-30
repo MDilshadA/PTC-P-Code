@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:8090/api/java-version
+method: GET
+order: 6000

@@ -1,0 +1,22 @@
+$kind: http-request
+url: http://localhost:8072/eazybank/loans/api/create?mobileNumber=4354437687
+method: POST
+queryParams:
+  mobileNumber: "4354437687"
+auth:
+  type: oauth2
+  credentials:
+    clientId: "{{ac-username}}"
+    accessTokenUrl: http://localhost:7080/realms/master/protocol/openid-connect/token
+    authUrl: http://localhost:7080/realms/master/protocol/openid-connect/auth
+    tokenName: authcode_accesstoken
+    tokenType: ""
+    addTokenTo: header
+    clientSecret: "{{ac-password}}"
+    scope: openid email profile
+    state: ew34er-344fgfg-5gfgfg
+    client_authentication: body
+    grant_type: authorization_code
+    accessToken: ""
+    useBrowser: true
+order: 10000

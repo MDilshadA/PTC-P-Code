@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://localhost:9010/sms
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "accountNumber": 1234545454,
+        "name": "Madan Reddy",
+        "email": "tutor@eazybytes",
+        "mobileNumber": "4354437687"
+    }
+order: 2000

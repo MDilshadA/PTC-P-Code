@@ -1,0 +1,10 @@
+read JwtAuthenticationFilter for proper jwt validation and authentication in Spring Security.
+roles and authorities in Spring Security for access control.
+
+role based access control (RBAC) in Spring Security allows you to restrict access to
+certain parts of your application based on the roles assigned to users.
+You can define roles such as "ROLE_USER", "ROLE_ADMIN", etc.,
+and then use annotations like @PreAuthorize or @Secured to specify which roles are
+required to access specific methods or endpoints.
+For example, you can use @PreAuthorize("hasRole('ROLE_ADMIN')") to restrict access to
+a method

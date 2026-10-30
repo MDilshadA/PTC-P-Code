@@ -1,0 +1,19 @@
+$kind: collection
+description: ""
+variables:
+  - key: auth_secret_1bs6
+    secret: true
+  - key: auth_secret_08s1
+    secret: true
+  - key: auth_secret_0xuc
+    secret: true
+  - key: auth_secret_1052
+    secret: true
+  - key: supabase_service_role_api_key_0noa
+    secret: true
+  - key: auth_secret_0a2g
+    secret: true
+  - key: auth_secret_0h6i
+    secret: true
+  - key: auth_secret_1665
+    secret: true

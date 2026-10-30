@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:8072/eazybank/loans/api/build-info
+method: GET
+order: 3000

@@ -1,0 +1,36 @@
+@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
+@JoinTable(
+        name = "user_roles",
+        joinColumns = @JoinColumn(name = "user_id"),
+        inverseJoinColumns = @JoinColumn(name = "role_id")
+)
+
+
+### Explanation:
+1. **`@ManyToMany`**:
+   - This annotation specifies a many-to-many relationship between `User` and `Role`.
+   - A `User` can have multiple ` Roles, and a `Role` can be assigned to multiple ` Users.
+
+2. **`fetch = FetchType.EAGER`**:
+   - Indicates that roles should be loaded immediately along with the user entity (eager fetching).
+   - This means when a `User` is fetched, their associated `Role is also fetched.
+
+3. **`cascade = CascadeType.MERGE`**:
+   - Specifies that changes to the `User` entity (e.g., merging updates) will also propagate to
+   the associated `Role` entities.
+
+4. **`@JoinTable`**:
+   - Defines the join table that maps the many-to-many relationship.
+   - The table `user_roles` is used to link `User` and `Role`.
+
+5. **`joinColumns`**:
+   - Specifies the foreign key column in the `user_roles` table that references the `User` entity.
+   - `name = "user_id"` means the column `user_id` in the `user_roles` table refers to the `id` of the `User`.
+
+6. **`inverseJoinColumns`**:
+   - Specifies the foreign key column in the `user_roles` table that references the `Role` entity.
+   - `name = "role_id"` means the column `role_id` in the `user_roles` table refers to the `id` of the `Role`.
+
+### Summary:
+This code creates a join table `user_roles` to manage the many-to-many relationship between `User` and `Role`.
+Each row in the `user_roles` table links a `User` to a `Role` using their respective IDs.

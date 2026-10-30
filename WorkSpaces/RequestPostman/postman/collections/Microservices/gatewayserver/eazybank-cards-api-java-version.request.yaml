@@ -1,0 +1,5 @@
+$kind: http-request
+name: eazybank/cards/api/java-version
+url: http://localhost:8072/eazybank/cards/api/build-info
+method: GET
+order: 13000

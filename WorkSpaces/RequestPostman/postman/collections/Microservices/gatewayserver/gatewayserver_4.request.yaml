@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:8072/eazybank/accounts/api/fetch?mobileNumber=4354437688
+method: GET
+queryParams:
+  mobileNumber: "4354437688"
+order: 4000

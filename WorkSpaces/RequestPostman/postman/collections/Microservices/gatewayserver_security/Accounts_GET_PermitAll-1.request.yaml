@@ -1,0 +1,7 @@
+$kind: http-request
+name: Accounts_GET_PermitAll
+url: http://localhost:8072/eazybank/accounts/api/fetchCustomerDetails?mobileNumber=4354437687
+method: GET
+queryParams:
+  mobileNumber: "4354437687"
+order: 11000

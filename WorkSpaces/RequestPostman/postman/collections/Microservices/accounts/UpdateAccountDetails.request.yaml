@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://localhost:8080/api/update
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "accountsDto": {
+            "accountNumber": 1619154778,
+            "accountType": "Savings",
+            "branchAddress": "1234 Main Street, New York"
+        },
+        "email": "tutor@eazybytes.com",
+        "mobileNumber": "4354437687",
+        "name": "Madan Mohan"
+    }
+order: 3000

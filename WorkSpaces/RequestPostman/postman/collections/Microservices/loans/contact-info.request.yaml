@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:8090/api/contact-info
+method: GET
+order: 7000

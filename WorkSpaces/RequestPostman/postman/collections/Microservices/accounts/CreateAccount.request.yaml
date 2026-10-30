@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://localhost:8080/api/create
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "name": "Madan Reddy",
+        "email": "tutor@eazybytes.com",
+        "mobileNumber": "4354437692"
+    }
+order: 1000

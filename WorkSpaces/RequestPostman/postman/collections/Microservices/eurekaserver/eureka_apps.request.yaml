@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://localhost:8070/eureka/apps/cards
+method: GET
+headers:
+  Accept: application/json
+settings:
+  disabledSystemHeaders:
+    - accept
+order: 1000

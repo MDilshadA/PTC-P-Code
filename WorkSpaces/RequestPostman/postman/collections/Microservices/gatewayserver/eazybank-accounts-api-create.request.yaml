@@ -1,0 +1,13 @@
+$kind: http-request
+name: eazybank/accounts/api/create
+url: http://localhost:8072/eazybank/accounts/api/create
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "name": "Madan Reddy",
+        "email": "tutor@eazybytes",
+        "mobileNumber": "4354437690"
+    }
+order: 5000

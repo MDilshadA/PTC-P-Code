@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:9000/api/create?mobileNumber=4354437687
+method: POST
+queryParams:
+  mobileNumber: "4354437687"
+order: 1000

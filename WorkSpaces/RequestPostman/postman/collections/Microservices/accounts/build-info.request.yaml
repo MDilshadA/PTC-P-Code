@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:8080/api/build-info
+method: GET
+order: 5000
